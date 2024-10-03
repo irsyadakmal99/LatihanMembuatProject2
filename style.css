@@ -16,9 +16,10 @@ h1 {
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 40px;
     color: rgba(18, 1, 1, 0.74);
+    text-align: center;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav ul {
 }
 
 /* nav ul.hidden {
-    display: none;
+  
 } */
 
 nav ul li a {
@@ -97,6 +98,21 @@ nav ul li a:hover {
 
 .produk-skincare img:hover {
     width: 40%;
+}
+
+.sertifikat {
+    margin: 50px;
+    font-size: 20px;
+}
+
+.logo-sertifikat {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-sertifikat img {
+    width: 200px;
+    margin: 5px;
 }
 
 
