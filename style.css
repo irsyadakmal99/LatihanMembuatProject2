@@ -12,6 +12,13 @@ body {
 h1 {
     font-weight: 700;
     font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: rgba(18, 1, 1, 0.74);
 }
 
 nav {
@@ -32,9 +39,9 @@ nav ul {
     gap: 2rem;
 }
 
-nav ul.hidden {
+/* nav ul.hidden {
     display: none;
-}
+} */
 
 nav ul li a {
     text-decoration: none;
@@ -56,6 +63,42 @@ nav ul li a:hover {
     display: none;
     font-size: 25px;
 }
+
+
+.home {
+    text-align: center;
+}
+
+.home img {
+    width: 100%;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.produk-skincare {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    gap: 5px;
+}
+
+.produk-skincare img {
+    width: 22%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s;
+}
+
+.produk-skincare img:hover {
+    width: 40%;
+}
+
 
 @media only screen and (max-width : 768px) {
     nav {
