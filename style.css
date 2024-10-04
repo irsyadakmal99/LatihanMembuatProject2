@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: auto;
 }
 
 body {
@@ -39,10 +40,6 @@ nav ul {
     list-style: none;
     gap: 2rem;
 }
-
-/* nav ul.hidden {
-  
-} */
 
 nav ul li a {
     text-decoration: none;
@@ -115,6 +112,109 @@ nav ul li a:hover {
     margin: 5px;
 }
 
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.testimonial-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    padding: 10px 20px;
+}
+
+.testimonial-heading span {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.testimonial-heading h2 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.testimonial-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px black;
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-user { 
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: black;
+    font-size: 20px;
+}
+
+.name-user span {
+    font-size: 12px;
+}
+
+.review {
+    color: yellow;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment q {
+    font-size: 15px;
+    color: black;
+}
+
+.testimonial-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
 
 @media only screen and (max-width : 768px) {
     nav {
@@ -130,4 +230,13 @@ nav ul li a:hover {
         display: flex;
         align-items: center;
     }
+    .testimonial-box {
+        width: 100%;
+    }
+    .testimonial-heading h1 {
+        font-size: 10px;
+    }
+    nav ul.hidden {
+    display: none;
+}
 }
